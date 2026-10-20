@@ -1,0 +1,13 @@
+<form id="form">
+  <input type="text" placeholder="search country" />
+</form>
+
+<div>
+  <ul class="country-list">
+    {{#each this}}
+      <li class="country-item">
+        <p class="county-name">{{name}}</p>
+      </li>
+    {{/each}}
+  </ul>
+</div>

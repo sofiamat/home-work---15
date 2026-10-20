@@ -1,0 +1,25 @@
+<form id="form">
+  <input type="text" placeholder="search country" />
+</form>
+
+<div class="full-country">
+  <article class="country">
+    <h3 class="country-title">{{name}}</h3>
+    <div class="country-meta">
+      <p>Capital: {{capital}}</p>
+      <p>Population: {{population}}</p>
+      <p>Language:</p>
+
+      <ul class="language-list">
+        {{#each languages}}
+          <li class="language-item">
+            <p class="language-speak">{{this}}</p>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="country-photo">
+      <img src="{{photo}}" alt="{{name}}" />
+    </div>
+  </article>
+</div>
